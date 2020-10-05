@@ -1,6 +1,8 @@
 import React from "react";
-import Homepage from "./Pages/Homepage";
 import Navbar from "./Components/Navbar";
+import Avtar from "./Components/Avtar";
+import Introtyper from "./Components/Introtyper";
+import SkillIcons from "./Components/SkillIcons";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,8 +11,13 @@ export default function App() {
     <div className="App">
       <Navbar />
       <div className="main">
-        <h1>Hello CodeSandbox</h1>
-        <Homepage />
+        <Avtar />
+        <div className="intro">
+          <Introtyper />
+        </div>
+        <div className="skills">
+          <SkillIcons />
+        </div>
       </div>
     </div>
   );

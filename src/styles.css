@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+
 :root {
   font-size: 16px;
   background: #fff0f0;
+  --body-background: #cbeaed;
+  --primary-color: #006a71;
+  --secondary-color: #ffffdd;
   /* background: #ccf6c8; */
 }
 body {
   margin: 0;
   padding: 0;
+  background: var(--body-background);
 }
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -18,14 +24,17 @@ body::-webkit-scrollbar-thumb {
   background: #2ba2e2;
 }
 .App {
-  font-family: "Gill Sans MT", cursive;
+  font-family: "Gill Sans MT";
   text-align: center;
   margin: 0 2rem 0 2rem;
   text-align: justify;
 }
 
 .main {
-  margin-top: 5rem;
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .spec-navbar {
@@ -40,10 +49,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .developer-name {
-  color: lawngreen;
+  color: var(--primary-color);
   margin: 2rem 0 0 0;
   font-size: 2.5rem;
   font-weight: 600;
+  font-family: "Grenze Gotisch";
   /* border: 1px red solid; */
 }
 .nav-items {
@@ -72,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-item:hover {
-  background: lawngreen;
+  background: var(--secondary-color);
 }
 
 .toggle-button {
@@ -81,6 +91,36 @@ body::-webkit-scrollbar-thumb {
   right: 1rem;
   height: 2rem;
   width: 24px;
-  color: lawngreen;
+  color: var(--primary-color);
   cursor: pointer;
+}
+
+/* Avtar image styling */
+.avtar {
+  margin-top: 2rem;
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  border: 0.2rem #d2e603 solid;
+}
+/* Introduction */
+
+.intro {
+  font-size: 2rem;
+  font-family: "Grenze Gotisch";
+  margin: 2rem;
+}
+
+.skills {
+  display: flex;
+}
+.skills-icon {
+  /* display: flex; */
+  /* position: absolute; */
+  width: 60px;
+  height: auto;
+  margin: 0.2rem;
+  overflow: hidden;
 }
