@@ -6,6 +6,7 @@
   --body-background: #cbeaed;
   --primary-color: #006a71;
   --secondary-color: #ffffdd;
+  scroll-behavior: smooth;
   /* background: #ccf6c8; */
 }
 body {
@@ -27,7 +28,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "Gill Sans MT";
   text-align: center;
   margin: 0 2rem 0 2rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .main {
@@ -69,9 +70,9 @@ body::-webkit-scrollbar-thumb {
 .nav-items.active {
   display: flex;
 }
-.nav-items:hover {
+/* .nav-items:hover {
   display: flex;
-}
+} */
 .nav-items > ul {
   text-align: center;
   width: 100%;
@@ -79,6 +80,7 @@ body::-webkit-scrollbar-thumb {
 .nav-item {
   max-width: 100%;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -98,16 +100,19 @@ body::-webkit-scrollbar-thumb {
 /* Avtar image styling */
 .avtar {
   margin-top: 2rem;
-  width: 60%;
+  width: 50%;
   max-width: 200px;
   height: auto;
   border-radius: 50%;
   background: var(--secondary-color);
   border: 0.2rem #d2e603 solid;
+  transition: 1.5s all ease-in-out;
+  transform: scale(1.2);
 }
 /* Introduction */
 
-.intro {
+.intro,
+h2 {
   font-size: 2rem;
   font-family: "Grenze Gotisch";
   margin: 2rem;
@@ -115,12 +120,60 @@ body::-webkit-scrollbar-thumb {
 
 .skills {
   display: flex;
+  padding-bottom: 2rem;
 }
 .skills-icon {
-  /* display: flex; */
-  /* position: absolute; */
   width: 60px;
   height: auto;
   margin: 0.2rem;
   overflow: hidden;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+.about > p {
+  font-size: 1.4rem;
+}
+
+/* Playlist */
+
+.card-width {
+  width: 18rem;
+}
+.card-width:hover {
+  transform: scale(0.9);
+  transition: 0.5s transform ease-in-out;
+}
+.description {
+  font-size: 0.8rem;
+  color: darkslategrey;
+  text-align: justify;
+}
+
+/* Contact */
+.contact {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  width: 100vw;
+  max-width: 99vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info-icons {
+  display: flex;
+}
+.contact-icon {
+  width: 40px;
+  margin: 1rem;
+}
+svg {
+  overflow: hidden;
+  vertical-align: middle;
 }

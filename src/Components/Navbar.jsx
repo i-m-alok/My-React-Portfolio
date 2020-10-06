@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCubes } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-scroll";
 // import {Link} from "react-router-dom"
 export default function NavBar() {
   const toggler = () => {
@@ -19,19 +19,48 @@ export default function NavBar() {
       <div className="nav-items">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+            >
+              About
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              About Me <span className="sr-only">(current)</span>
-            </a>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+            >
+              Portfolio
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact Us <span className="sr-only">(current)</span>
-            </a>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="playlist"
+              spy={true}
+              smooth={true}
+            >
+              Playlist
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+            >
+              Contact Me
+            </Link>
           </li>
         </ul>
       </div>

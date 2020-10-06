@@ -54,12 +54,11 @@ export default function skillIcons() {
         </g>
       </svg>
       <svg
-        class="skills-icon flicker-four"
+        className="skills-icon"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
       >
         <path
-          class="flicker-four"
           d="M512 256c0 33.353-6.374 65.212-17.983 94.438a254.615 254.615 0 01-22.936 44.45 256.513 256.513 0 01-39.549 47.449 256.659 256.659 0 01-28.035 22.925C361.806 494.707 310.93 512 256 512s-105.806-17.293-147.498-46.738a256.056 256.056 0 01-34.534-29.268C28.233 389.757 0 326.165 0 256S28.233 122.243 73.968 76.006a256.536 256.536 0 0136.728-30.793C151.97 16.697 202.031 0 256 0s104.03 16.697 145.304 45.213a253.828 253.828 0 0128.588 22.925 256.319 256.319 0 0141.19 48.974 254.615 254.615 0 0122.936 44.45C505.626 190.788 512 222.647 512 256z"
           fill="#e4ba42"
         ></path>
@@ -83,7 +82,7 @@ export default function skillIcons() {
             id="linearGradient-1"
           >
             <stop stopColor="#387EB8" offset="0%"></stop>
-            <stop stopcolor="#366994" offset="100%"></stop>
+            <stop stopColor="#366994" offset="100%"></stop>
           </linearGradient>
           <linearGradient
             x1="19.127525%"
@@ -93,7 +92,7 @@ export default function skillIcons() {
             id="linearGradient-2"
           >
             <stop stopColor="#FFE052" offset="0%"></stop>
-            <stop stopcolor="#FFC331" offset="100%"></stop>
+            <stop stopColor="#FFC331" offset="100%"></stop>
           </linearGradient>
         </defs>
         <g>
