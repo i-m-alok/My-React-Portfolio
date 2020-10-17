@@ -42,14 +42,14 @@ export default function App() {
             <b>Enthusiastic towards:</b> Development
           </p>
         </section>
-        <div className="portfolio" id="portfolio">
+        {/* <div className="portfolio" id="portfolio">
           hgvadfhsdfghgiufdgiofdghgfdhfdoih
-        </div>
+        </div> */}
         <div className="playlist border-top border-secondary m-3" id="playlist">
           <h2 className="p-3 m-3">Playlist</h2>
           <Playlist />
         </div>
-        <div className="contact border-top border-secondary" id="contact">
+        <div className="contact border-top border-secondary mt-3" id="contact">
           <h2 className="p-3 m-3">Contact</h2>
           <div className="m-3">
             <Contact />
