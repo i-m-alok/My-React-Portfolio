@@ -1,0 +1,7 @@
+{
+    "ignorePatterns": ["**/*.js", "**/*.jsx"],
+    "rules": {
+        "jsx-no-target-blank": 0,
+        "img-redundant-alt": 0
+    }
+}

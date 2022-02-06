@@ -1,6 +1,0 @@
-{
-    "ignorePatterns": ["**/*.js"],
-    "rules": {
-        "jsx-no-target-blank": 0
-    }
-}
