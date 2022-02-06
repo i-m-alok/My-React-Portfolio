@@ -21,7 +21,7 @@ function Playlist() {
       {fetchData
         ? fetchData.map((item) => {
             const { id, snippet = {} } = item;
-            const { title, description, thumbnails = {}, resourceId } = snippet;
+            const { title, thumbnails = {} } = snippet;
             const { medium = {} } = thumbnails;
             return (
               <li
